@@ -1,0 +1,19 @@
+{
+  "type": "TYPE_3",
+  "startSymbol": "S",
+  "nonTerminals": ["A", "B", "S", "C", "D", "E", "F"],
+  "terminals": ["a", "b"],
+  "productions": [
+    {"left": "S", "right": "aA"},
+    {"left": "A", "right": "aB"},
+    {"left": "A", "right": "bD"},
+    {"left": "B", "right": "aC"},
+    {"left": "B", "right": "bE"},
+    {"left": "C", "right": "aA"},
+    {"left": "C", "right": "bF"},
+    {"left": "D", "right": "bE"},
+    {"left": "E", "right": "bF"},
+    {"left": "E", "right": "ε"},
+    {"left": "F", "right": "bD"}
+  ]
+}

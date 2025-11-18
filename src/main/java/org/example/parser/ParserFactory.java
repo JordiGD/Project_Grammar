@@ -21,16 +21,4 @@ public class ParserFactory {
                 throw new IllegalArgumentException("Tipo de gramática no soportado: " + grammar.getType());
         }
     }
-
-    /**
-     * Verifica si una gramática puede ser tratada como Tipo 3
-     */
-    public static boolean canBeType3(Grammar grammar) {
-        try {
-            new Type3Parser(grammar);
-            return true;
-        } catch (IllegalArgumentException e) {
-            return false;
-        }
-    }
 }

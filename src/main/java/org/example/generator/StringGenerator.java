@@ -21,7 +21,6 @@ public class StringGenerator {
         Set<String> generated = new LinkedHashSet<>();
         Queue<DerivationState> queue = new LinkedList<>();
 
-        // Estado inicial
         DerivationState initial = new DerivationState();
         initial.sententialForm = Collections.singletonList(grammar.getStartSymbol());
         initial.depth = 0;
